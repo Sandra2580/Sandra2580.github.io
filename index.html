@@ -1,0 +1,98 @@
+<html>
+	<!--
+	1. <body>: 22~86
+		background-color:#FFF8DC;
+		color: #5E2612;
+		font-size: 18px;
+		padding: 20px;
+	2. .dark:(切換body的CSS)
+		background-color: black;
+		color: white;
+	3. <span>:41 (特別標示NCU)
+		color: red;
+		font-size: 22px;
+	4. <ul>:68~73 (設定list的效果)
+		font-size: 22px;
+		list-style-type:square;
+	5. #cat:hover:62 (設定cat的hover效果)
+		font-weight:bold;
+		text-align: center;
+		background-color: #B0C4DE;
+		padding: 16px;
+		color:white;
+	6. #dog:hover:63 (設定dog的hover效果)
+		font-weight:bold;
+		text-align: center;
+		background-color: #EF9595;
+		padding: 16px;
+	-->
+	<head>
+		<title>Saza</title>	
+		<link rel="stylesheet" href="mystyle.css">
+	</head>
+	<body>
+		<div>
+			<h3>TIME</h3>
+			<button type="button" onclick="document.getElementById('datetime').innerHTML = Date()">
+				PRESS to know
+			</button>
+			<p id="datetime"></p>
+			
+			<p><b>更改模式</b></p>
+			<button onclick="change()">Change Mode</button>	
+		</div>
+		<br>
+		<hr color="brown" size="1.5">
+		<div>
+			<h2>About me</h2>
+			<p><b>關於我的學校 -- <span>NCU</span></b></p>
+			<p>中大蒼松成蔭、環境清幽，在全球推動綠色經濟之際，「永續社會發展，增進人類福祉」為中大重要辦學目標，利用校內固有資源，打造友善地球綠色校園。同時，中大設立了全台首座崑曲博物館，展現人文領域的豐厚資源，使師生在藝文及科技間有了對話機會。助學方面，提供獎學金以及課業輔導等協助，讓弱勢學生向上流動，並且提供社區及偏鄉高中之優秀學生進入本校之機會，達到「高中均質、區域均衡」。</p>
+			<center>
+				<img src="NCU.jpg" alt="NCU(櫻花)" width="400" height="300">
+				<img src="NCU2.jpg" alt="NCU(大樓)" width="400" height="300">			
+			</center>
+			
+			<br style="line-height:25px">
+			
+			<p><b>最喜歡的寵物</b></p>
+			<p><b>貓!!!!</b></p>
+			<center>
+				<img src="CAT.jpg" alt="CAT" width="400" height="300">
+				<img src="CAT1.jpg" alt="CAT1" width="400" height="300">			
+			</center>
+			
+			<br style="line-height:25px">
+			
+			<b>你是屬於:</b>
+			<p id="cat"><b>貓派</b></p>
+			<p id="dog"><b>狗派</b></p>
+			<br style="line-height:5px">
+			<hr color="brown" size="1.5">
+			
+			<h3>Now learning...</h3>
+			<ul>
+				<li>C</li>
+				<li>Java</li>
+				<li>Python</li>
+				<li>HTML...</li>
+			</ul>
+			
+			<p><b>I hope I can learn more here, Nice to meet you!!</b></p>
+		</div>
+		
+		<hr color="brown" size="1.5">
+		
+		<div>
+			<h3>參考資料:</h3>
+			<ul>
+				<li><a href="https://www.ncu.edu.tw/tw/pages/show.php?top=1&num=477" target="_blank">NCU</a></li>
+			</ul>
+		
+		<script>
+			function change(){
+				var element = document.body;
+				element.classList.toggle("dark");
+			}
+		</script>
+	</body>
+</html>

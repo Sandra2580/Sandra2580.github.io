@@ -1,0 +1,36 @@
+body {
+	background-color:#FFF8DC;
+	color: #5E2612;
+	font-size: 18px;
+	padding: 20px;
+}
+
+.dark{
+	background-color: black;
+	color: white;
+}
+
+span {
+	color: red;
+	font-size: 22px;
+}
+
+ul {
+	font-size: 22px;
+	list-style-type:square;
+}
+
+#cat:hover {
+	font-weight:bold;
+	text-align: center;
+	background-color: #B0C4DE;
+	padding: 16px;
+	color:white;
+}
+
+#dog:hover {
+	font-weight:bold;
+	text-align: center;
+	background-color: #EF9595;
+	padding: 16px;
+}
